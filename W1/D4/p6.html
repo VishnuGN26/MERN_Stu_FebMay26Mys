@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Grid Layouts</title>
+    <style>
+        .item{
+        background-color: aquamarine;
+        color: black;
+        padding: 20px;
+        margin: 10px;
+
+    } 
+      .outer{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 10px;
+        background-color: blanchedalmond;
+        padding: 10px;
+      }
+    .inner{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+    }
+    .inner-item{
+        background-color: burlywood;
+        color: black;
+    }
+    
+   
+    </style>
+</head>
+<body>
+    
+    <!-- Nested grid layouts -->
+   <div class="outer">
+   <div class="item">1</div>
+   <div class="inner">
+    <div class="item inner-item">Nested A</div>
+    <div class="item inner-item">Nested B</div>
+    <div class="item inner-item">Nested C</div>
+    <div class="item inner-item">Nested D</div>
+    
+
+   </div>
+   </div>
+</body>
+</html>
