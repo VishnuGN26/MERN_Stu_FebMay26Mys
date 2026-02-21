@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layouts</title>
+    <style>
+       .grid-fr{
+        display: grid; 
+        grid-template-columns:repeat(3,1fr); /*3 equal cols*/
+        gap: 10px;
+        margin-bottom: 10px;
+       }
+    .item{
+        background-color: aquamarine;
+        color: black;
+        padding: 20px;
+        margin: 10px;
+
+    } 
+    
+   
+    </style>
+</head>
+<body>
+    
+    <!-- Fixed width coulmn using fractional columns -->
+    <div class="grid-fr">
+        <div class="item">1</div> 
+        <div class="item">2</div>
+        <div class="item">3</div>
+</body>
+</html>
