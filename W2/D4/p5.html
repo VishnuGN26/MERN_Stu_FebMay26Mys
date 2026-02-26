@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <main class="max-w-4xl mx-auto p-6 space-y-8">
+       
+       <!-- <section class="border rounded p-6 space-y-4">-->
+        <section class="border rounded p-6 space-y-4">
+            <div class="overflow-hidden rounded border">
+                <div id="track" class="flex transition-transform duration-300 ease-out">
+                    <div class="w-full shrink-0 h-52  flex items-center justify-center bg-red-100 font-bold">
+                        Slide 1
+                    </div>
+                    <div class="w-full shrink-0 h-52  flex items-center justify-center bg-green-100 font-bold">
+                        Slide 2
+                    </div>
+                    <div class="w-full shrink-0 h-52  flex items-center justify-center bg-blue-100 font-bold">
+                        Slide 3
+                    </div>
+                </div>
+                <div class="flex justify-center items-center gap-3">
+                 <button id="prev" class="px-3 py-2 rounded border hover:bg-blue-100 transition">Prev</button>
+                  <button id="next" class="px-3 py-2 rounded border hover:bg-blue-100 transition">Next</button>
+
+            </div>
+            </div>
+        </section>
+
+    </main>
+    <script>
+        const track = document.getElementById('track');
+        const prevBtn = document.getElementById('prev');
+         const nextBtn = document.getElementById('next');
+         let index = 0;
+         const total = 3;
+         function update(){
+            track.style.transform = `translatex(-${index*100}%)`;
+         }
+         prevBtn.addEventListener('click',()=>{
+            index = (index -1 + total)%total; update();
+         });
+             nextBtn.addEventListener('click',()=>{
+            index = (index + 1 + total)%total; update();
+         });
+update();
+    </script>
+</body>
+</html>
