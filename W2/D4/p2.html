@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index for modals</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body>
+    <main class="max-w-4xl mx-auto p-6 space-y-8">
+        <section class=" border rounded">
+            <div class=" relative h-55 overflow-hidden">
+                <div class="absolute inset-0 flex items-center justify-center bg-green-50">
+                    <div class="text-gray-700">Background Content</div>
+                </div>
+            </div>
+<div class="absolute top-0 left-0 right-0 h-14  text-white bg-gray-600 items-center px-4 z-10"> App header: with z-10</div>
+<div class="absolute inset-0 left-4 border rounded z-50 bg-red-50 h-100 w-200">
+    <div class="absolute bottom-4 left-4 px-3 py-2 border rounded">
+        Modal layer z-50
+
+ </div>
+</div>
+
+        </section>
+    </main>
+</body>
+</html>
