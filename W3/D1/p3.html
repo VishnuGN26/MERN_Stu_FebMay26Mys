@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS variables: hoisting</title>
+</head>
+
+<body>
+    <pre id="out"></pre>
+    <button id="runBtn" class="px-3 py-1 rounded mt-2 mb-2 text-white bg-black">Run</button>
+
+    <script>
+        const out = document.getElementById("out");
+        function print(...args) {
+            console.log(...args);
+            out.textContent += args.join("") + "\n";
+        }
+
+        function clearOut() {
+            out.textContent += "";
+
+        }
+        function run() {
+            clearOut();
+            if (true) {
+                var x = "var escapes the if block";
+            }
+            print("X = ", x);
+            // Let:scope
+            if (true) {
+                let y = "let stays in the if block";
+                print("Y inside block = ",y);
+            }
+             //print("Y inside block = ",y);
+             print("Before declaration=",testVar);
+             var testVar = "assigned value now";
+             print("After declaration=",testVar);
+
+             try{
+                print("before let decn.",testLet);
+
+             }
+             catch(e){
+                print("Accessing let before decn causes",e.name,e.message);
+             }
+             let testLet = "declare now";
+             print("after let decn.",testLet);
+
+        }
+        document.getElementById("runBtn").addEventListener("click", run);
+    </script>
+</body>
+
+</html>
