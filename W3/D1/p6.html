@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS objects,arrays</title>
+</head>
+
+<body>
+    <pre id="out"></pre>
+    <button id="runBtn" class="px-3 py-1 rounded mt-2 mb-2 text-white bg-black">Run</button>
+
+    <script>
+        const out = document.getElementById("out");
+        function print(...args) {
+            console.log(...args);
+            out.textContent += args.join("") + "\n";
+        }
+
+        function clearOut() {
+            out.textContent += "";
+
+        }
+        function run() {
+            clearOut(); //dynamic typing,concatenation,type coversion
+            let value = "10";
+            print("Value = ", value, "Typeof=", typeof value);
+            value = 20;
+            print("Value = ", value, "Typeof=", typeof value);
+            print("'10'+5: ", "10" + 5);
+            print(" '10'-5: ", "10" - 5); //numeric conversion 
+            print("'10'==10:", "10" == 10);
+            print("'10'===10:", "10" === 10);
+            //datatypes
+            const undefval = undefined;
+            const nullVal = null;
+            print("undefval = ",typeof undefval);
+            print("nullVal = ",nullVal,"typeof: ",typeof nullVal);
+ document.body.style.background = "#FCFBBB";
+
+
+        }
+        
+
+        document.getElementById("runBtn").addEventListener("click", run);
+    </script>
+</body>
+
+</html>
