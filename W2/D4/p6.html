@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout design with sidebar</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body>
+    <main class="max-w-4xl mx-auto p-6 space-y-8">
+        <section class="border rounded overflow-hidden bg-gray-50">
+            <div class="flex min-h-[360px]">
+                <aside class="w-64 flex-none border-r p-4 space-y-3">
+                    <div class="fixed top-4 p-4 space-y-2">
+                    <div class="font-bold">
+                        Sidebar
+                    </div>
+                    <a href="#" class="block text-sm hover:underline">
+                        Dashboard
+                    </a>
+                    <a href="#" class="block text-sm hover:underline">
+                        Courses
+                    </a>
+                    <a href="#" class="block text-sm hover:underline">
+                        Reports
+                    </a>
+                    <a href="#" class="block text-sm hover:underline">
+                        Settings
+                    </a>
+                    </div>
+                </aside>
+                <section class="flex-1 p-6 space-y-4">
+                    <h1 class="text-lg font-bold">Main Content
+                    </h1>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="border rounded p-4">Card A </div>
+                        <div class="border rounded p-4">Card B </div>
+                        <div class="border rounded p-4">Card C  </div>
+                        <div class="border rounded p-4">Card D </div>
+
+                    </div>
+                </section>
+
+            </div>
+        </section>
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div class="aspect-video rounded flex items-center justify-center">16:9(aspect-video)
+
+            </div>
+
+        </section>
+    </main>
+</body>
+</html>
