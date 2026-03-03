@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS variables: hoisting</title>
+</head>
+<body>
+    <pre id="out">
+
+   </pre>
+   <button id="runBtn" class="px-3 py-1 rounded mt-2 mb-2 text-white bg-black">Run</button>
+    <script>
+        const out = document.getElementById("out");
+         function print(...args){
+             console.log(...args);
+            out.textContent += args.join("") + "\n";
+        }
+       
+        function clearOut() {
+            out.textContent +="";
+
+            }
+            function run(){
+                clearOut();
+                 var a = 10;
+        var a = 20;
+         print("var a=",a);
+         let b = 5;
+         b = 15;
+        // let b =25; // create errors if uncommented
+        print("value of let b=",b);
+        //const
+        const pi=3.1415;
+       // pi = 2.13;
+        print("const pi=",pi);
+        }
+        document.getElementById("runBtn").addEventListener("click", run);
+    </script>
+</body>
+</html>
