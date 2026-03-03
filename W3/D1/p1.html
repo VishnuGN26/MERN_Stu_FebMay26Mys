@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>console usage and simple dom manipulation </title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <h1 class="text-2xl font-bold">My first Javascript</h1>
+    <button id="runBtn" class="px-3 py-1 rounded mt-2 mb-2 text-white bg-black">Run</button>
+    <pre id="out">
+
+   </pre>
+    <script>
+        const out = document.getElementById("out");
+        //function which accpets variable no of args
+        function print(...args) {
+            //CONSOLE
+            console.log(...args);
+         out.textContent += args.join("") + "\n";
+        }
+        
+        function run() {
+            print("Hello from Java Script!");
+            print("2+3=", 2 + 3);
+            document.body.style.background = "#FCFBBB";
+
+        }
+
+        document.getElementById("runBtn").addEventListener("click", run);
+        run();
+
+    </script>
+</body>
+
+</html>
