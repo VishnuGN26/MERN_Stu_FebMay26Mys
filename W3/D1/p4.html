@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS primitives</title>
+</head>
+
+<body>
+    <pre id="out"></pre>
+    <button id="runBtn" class="px-3 py-1 rounded mt-2 mb-2 text-white bg-black">Run</button>
+
+    <script>
+        const out = document.getElementById("out");
+        function print(...args) {
+            console.log(...args);
+            out.textContent += args.join("") + "\n";
+        }
+
+        function clearOut() {
+            out.textContent += "";
+
+        }
+        function run() {
+            clearOut();
+            const name = "Vishnu";
+            print("name = ",name,"typeof=",typeof name);
+            const isLoggedin = true;
+            print("isLoggedIn = ",isLoggedin,"typeof=",typeof isLoggedin);
+            const number = 99.99;
+            print("number = ",number,"typeof=",typeof number);
+            const number1 = 99;
+            print("number1 = ",number1,"typeof=",typeof number1);
+
+        }
+        document.getElementById("runBtn").addEventListener("click", run);
+    </script>
+</body>
+
+</html>
