@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS objects,arrays</title>
+</head>
+
+<body>
+    <pre id="out"></pre>
+    <button id="runBtn" class="px-3 py-1 rounded mt-2 mb-2 text-white bg-black">Run</button>
+
+    <script>
+        const out = document.getElementById("out");
+        function print(...args) {
+            console.log(...args);
+            out.textContent += args.join("") + "\n";
+        }
+
+        function clearOut() {
+            out.textContent += "";
+
+        }
+        function run() {
+            clearOut();
+            const user = { name: "Vishnu",age:25};
+            print("User=",JSON.stringify(user));
+            
+            const myArray = [1,2,3,];
+            myArray.push(5);
+            print("Is it an array:?",Array.isArray(myArray));
+        }
+        document.getElementById("runBtn").addEventListener("click", run);
+    </script>
+</body>
+
+</html>
