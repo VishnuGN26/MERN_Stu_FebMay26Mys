@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spanning cols</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <main class="max-w-4xl mx-auto p-6 space-y-8">
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <article class="border rounded p-6 lg:col-span-2 ">
+                <div class="mt-4 h-28 rounded bg-red-200">
+                    Colspan
+                </div>
+            </article>
+            <article class="border rounded p-6">Tile A</article>
+            <article class="border rounded p-6">Tile B</article>
+            <article class="border rounded p-6">Tile C</article>
+            <article class="border rounded p-6">Tile D</article>
+        </section>
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-[160px] gap-6">
+            <article class="border rounded p-6 lg:row-span-2 ">
+                <div class="mt-4 h-28 rounded bg-green-200">
+                    Rowspan
+                </div>
+            </article>
+            <article class="border rounded p-6">Tile A</article>
+            <article class="border rounded p-6">Tile B</article>
+            <article class="border rounded p-6">Tile C</article>
+            <article class="border rounded p-6">Tile D</article>
+        </section>
+    </main>
+</body>
+</html>
