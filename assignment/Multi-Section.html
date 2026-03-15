@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text content basics</title>
+</head>
+
+<body>
+
+<h1>Feedback Analyzer</h1>
+
+<form id="feedbackForm">
+
+<input type="text" id="name" placeholder="Name">
+
+<input type="email" id="email" placeholder="Email">
+
+<select id="type">
+<option value="">Select Feedback Type</option>
+<option value="Bug">Bug</option>
+<option value="Suggestion">Suggestion</option>
+<option value="Appreciation">Appreciation</option>
+</select>
+
+<textarea id="feedback" placeholder="Enter feedback"></textarea>
+
+<button type="submit">Submit Feedback</button>
+
+<p id="error"></p>
+
+</form>
+
+<h2>Total Feedback: <span id="count">0</span></h2>
+
+<div id="feedbackContainer"></div>
+
+<script src="a3.js"></script>
+
+</body>
+</html>
