@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Card</title>
+   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-100 p-10">
+
+  <div class="max-w-4xl mx-auto bg-white shadow rounded-lg p-6">
+    <div class="flex justify-between items-center">
+
+
+      <div class="flex space-x-10">
+        <div>
+          <p class="text-sm text-gray-500">Active Users</p>
+          <p class="text-xl font-semibold">12,480</p>
+          <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded">Up</span>
+        </div>
+
+        <div>
+          <p class="text-sm text-gray-500">Requests / Min</p>
+          <p class="text-xl font-semibold">1,240</p>
+          <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">Stable</span>
+        </div>
+
+        <div>
+          <p class="text-sm text-gray-500">Error Rate</p>
+          <p class="text-xl font-semibold">2.1%</p>
+          <span class="text-xs bg-red-100 text-red-700 px-2 py-1 rounded">Down</span>
+        </div>
+
+      </div>
+
+      <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+        Download Report
+      </button>
+
+    </div>
+
+    <div class="mt-6 bg-red-100 border-l-4 border-red-500 p-4">
+      <p class="text-red-700 ">
+        Scheduled maintenance tonight may briefly affect dashboard updates.
+      </p>
+    </div>
+
+  </div>
+
+</body>
+</html>
