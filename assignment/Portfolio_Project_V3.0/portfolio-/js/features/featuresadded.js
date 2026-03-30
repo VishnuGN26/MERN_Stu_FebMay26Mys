@@ -149,19 +149,16 @@ const projects = [
         category: "Fullstack"
     }
 ];                      
-// ================================
-// CATEGORY FILTER FEATURE
-// ================================
 
-// Elements
+
+
+
 const filtersContainer = document.getElementById("project-filters");
 const projectsContainer = document.getElementById("projects-container");
 
 let activeCategory = "All";
 
-// ================================
-// CREATE FILTER BUTTONS
-// ================================
+
 const categories = ["All", ...new Set(projects.map(p => p.category))];
 
 categories.forEach(category => {
@@ -173,11 +170,11 @@ categories.forEach(category => {
     btn.addEventListener("click", () => {
         activeCategory = category;
 
-        // Remove active style
+    
         document.querySelectorAll("#project-filters button")
             .forEach(b => b.classList.remove("bg-blue-500", "text-white"));
 
-        // Add active style
+
         btn.classList.add("bg-blue-500", "text-white");
 
         filterProjects();
@@ -186,9 +183,7 @@ categories.forEach(category => {
     filtersContainer.appendChild(btn);
 });
 
-// ================================
-// FILTER FUNCTION
-// ================================
+
 function filterProjects() {
     let filtered;
 
@@ -201,9 +196,7 @@ function filterProjects() {
     renderProjects(filtered);
 }
 
-// ================================
-// RENDER PROJECTS
-// ================================
+
 function renderProjects(list) {
     projectsContainer.innerHTML = "";
 
@@ -230,9 +223,6 @@ function renderProjects(list) {
     });
 }
 
-// ================================
-// INITIAL LOAD
-// ================================
 renderProjects(projects);
 
 
