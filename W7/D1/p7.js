@@ -1,4 +1,4 @@
-//vuilt in middleware
+//built in middleware
 const express = require("express");
 const app = express();
 
