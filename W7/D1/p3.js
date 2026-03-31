@@ -3,7 +3,15 @@ const express = require("express");
 const app = express();
 app.get("/users",function(req,res){
     //To read
-  res.send("Returning all users");
+res.status(200).json([{message:"success"},
+    {id:1,name:"Vishnu"},
+    {id:2,name:"Chiru"},
+    {id:3,name:"Rohit"}
+
+  ]);
+//   res.send("Returning all users");
+  
+
 });
 
 //to create
