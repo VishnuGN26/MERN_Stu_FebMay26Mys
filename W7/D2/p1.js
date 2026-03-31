@@ -18,13 +18,36 @@ apiRouter.get("/users",function(req,res){
 apiRouter.get("/orders",function(req,res){
     res.json({
         route: "/api/orders",
-        message: "oders route inside api router"
+        message: "orders route inside api router"
     });
 });
 
 //mount the router under the /api base path
 app.use("/api",apiRouter);
 
+
+
+//NEW ROUTER
+//product router(handles/api/products/..)
+const productsRouter = express.Router();
+
+///api/products -> create product
+productsRouter.post("/",(req,res) => {
+    res.json({
+        route: "/api/products",
+        message: "Create products"
+    });
+});
+
+// /api/products/:id  -> delete product
+productsRouter.delete("/:id",(req,res) => {
+    res.json({
+        route: `/api/products/${req.params.id}`,
+        message: "Delete product",
+    });
+});
+
+apiRouter.use("/products",productsRouter);
 app.listen(4000,function(){
     console.log("Express server running at http://localhost:4000");
 });
