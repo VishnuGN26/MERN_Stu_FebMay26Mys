@@ -10,6 +10,7 @@ callback(null,selectedMovie);
 }
 
 
+
 function validateTimeSelection(movies,selectedTime,callback){
     const selectedShowtime =  movie.showtimes.find((show)=>show.time.toLowerCase()===selectedTime.toLowerCase());
     if(!selectedShowtime){
