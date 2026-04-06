@@ -15,7 +15,7 @@ app.get("/set-session",function(req,res){
 });
 
 app.get("/read-session",function(req,res){
-    res.json({
+    res.json({  
         message: "Server can read the cookie value from the request",sessionId:req.cookies.sessionId ||
         "No session cookie found"
     });

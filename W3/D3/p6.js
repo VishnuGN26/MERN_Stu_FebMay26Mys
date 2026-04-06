@@ -19,3 +19,4 @@ greet(){
 console.log(student.fullname());
 console.log("student",student);
 console.log(student.scores.math);//gives only the math scores of the student
+console.log("Values",Object.values(book));

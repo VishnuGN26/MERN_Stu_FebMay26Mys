@@ -73,4 +73,4 @@ app.get("/admin",authenticateToken,requireRole("admin"),function(req,res){
 
 app.listen(4000,function(){
     console.log("JWT protected route server running @ http://localhost:4000");
-});
+}); 

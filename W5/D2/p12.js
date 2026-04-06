@@ -30,4 +30,4 @@ validateLogin()
 })
 .catch(function(error){
     console.log("Chain error,",error);
-})
+}) 

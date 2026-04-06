@@ -13,5 +13,5 @@ function canAccess(route,role){
 console.log("User access to /admin: ",canAccess("/admin","user"));
 console.log("Admin access to /admin: ",canAccess("/admin","admin"));
 console.log("Manager access to /reports: ",canAccess("/reports","manager"));
-console.log("User access to /profile: ",canAccess("/profile","user"));
+console.log("User access to /profile: ",canAccess("/profile","user")); 
 

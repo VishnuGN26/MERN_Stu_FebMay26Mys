@@ -1,0 +1,28 @@
+.dark-mode{
+    background-color: black;
+    color: white;
+}
+
+.dark-mode nav{
+    background-color: rgba(50, 47, 47, 0.072);
+    color: white;
+}
+
+.dark-mode section{
+    background-color: rgba(50, 47, 47, 0.072);
+    color: white;
+}
+
+.dark-mode .bg-blue-100{
+    background-color: #6b4487;
+}
+
+.dark-mode .bg-white{
+    background-color: rgb(141, 33, 128);
+    color: white;
+}
+
+.dark-mode .bg-gray-700{
+    background-color: rgb(115, 59, 59);
+    
+}

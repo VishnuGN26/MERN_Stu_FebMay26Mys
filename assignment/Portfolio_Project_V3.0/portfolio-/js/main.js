@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded",function(){
     renderSkills();
     initModal();
     initContactValidation();
-initThemeToggle();
+     initThemeToggle();
      renderProject(); 
       scrollProgress();
     scrollSpy();

@@ -13,8 +13,13 @@ document.getElementById("saveBtn").addEventListener("click",
     }
 ); 
 document.getElementById("readBtn").addEventListener("click", function () {
+    try{
     const up = localStorage.getItem("userProfile");
     console.log(JSON.parse(up));
     console.log(up);
     jsonOutput.textContent = "userProfile" +up;
+    }
+    catch(error){
+        jsonOutput.textContent ="JSON Parsing failed";
+    }
    });

@@ -8,7 +8,7 @@ function scope(){
     // console.log(insideConst);
 }
 scope();
-//console.log(insideVar);// function scoped
+//console.log(insideVar);// function scoped 
    // console.log(insideLet); // block scoped
   //  console.log(insideConst); // block scoped
   function varFunctionScoped(){

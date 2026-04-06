@@ -1,0 +1,6 @@
+{
+    "appName":"myapp",
+    "environment":"dev",
+    "features":["billing","invoicegeneration"]
+    
+}

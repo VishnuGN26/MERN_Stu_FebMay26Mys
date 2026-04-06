@@ -12,7 +12,7 @@
 // console.log("Program execution continues");
 
 //JSON Parsing error
-let jsonText = "{json}"
+let jsonText = "{json}" 
 try{
     let data = JSON.parse(jsonText);
     console.log(data);

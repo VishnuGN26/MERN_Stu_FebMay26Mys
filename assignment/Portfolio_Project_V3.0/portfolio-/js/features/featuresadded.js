@@ -149,10 +149,6 @@ const projects = [
         category: "Fullstack"
     }
 ];                      
-
-
-
-
 const filtersContainer = document.getElementById("project-filters");
 const projectsContainer = document.getElementById("projects-container");
 

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    </head>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<body class="bg-violet-200">
+
+    <header>
+        <nav>
+            <a href="#home" class="logo"><div class="border-3 bg-red-300 border-red-100 rounded-r-small ">Vishnu G N</div></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li><div class="border-8 bg-red-300 border-red-100 rounded-r-full">Home</div>
+                <li><a href="#about">About</a></li><div class="border-8 bg-pink-400 border-red-100 rounded-r-full">About</div>
+                <li><a href="#skills">Skills</a></li><div class="border-8 bg-yellow-400 border-red-100 rounded-r-full">Skills</div>
+                <li><a href="projects">Projects</a></li><div class="border-8 bg-green-400 border-red-100 rounded-r-full">Projects</div>
+                <li><a href="#contact">Contact</a></li><div class="border-8 bg-violet-400 border-red-100 rounded-r-full">Contact</div>
+            </ul>
+
+        </nav>
+
+    </header>
+    <!-- Flexbox Layout: hero-->
+    <section id="home" class="hero">
+        <h1> Vishnu G N</h1>
+        <img src="WhatsApp Image 2026-02-23 at 10.45.05 PM.jpeg" alt="My photo" class="mphoto" height= 170px; width= 150px;>
+        <p class="text-red-500">Software developer <br>MERN Stack|Devops</p>
+        <a href="#contact" class="cta-button">Contact Me</a>
+       
+    </section>
+    <!-- about section -->
+    <section id="about">
+        <h2 class="text-blue-800 p-6 m-4">About Me</h2>
+        <article class="about">
+            <h3 class="text-red-500 p-5 m-4">Full Stack Developer</h3>
+            <p class=" border-4 text-green-700"> Experienced in web dev and hosting.
+                Specialized in Finance-Domain projects.
+            </p><div class="border-4 text-green-700"></div>
+          <div class="tags">
+            <span class="tag">Backend: NodeJS</span>
+            <span class="tag">DB: optimization</span>
+            
+          </div>
+
+        </article>
+    </section>
+<!-- skills-->
+<section id="skills">
+    <h3>My Skills</h3>
+    <div class="skill-grid">
+        <div class="skill-card">
+            <h4 class="text-blue p-6 m-4">MERN Stack</h4>
+            <p class="text-red-500">ReactJS,NodeJS,ExpressJS,MongoDB</p>
+
+        </div>
+
+    </div>
+</section>
+<!-- PROJECTS-->
+ <section id="projects">
+    <h3>My Projects</h3>
+    <div class="projects-container"><div class="border-8 bg-red-300 border-red-100 rounded-r-full">projects-container</div>
+        <div class="projects-content"><div class="border-8 bg-red-300 border-red-100 rounded-r-full">projects-content</div>
+            <h4>gola</h4>
+            <p>Rapid way to book a cab hassle free</p>
+            <a href="https://gola.com" target="_blank">View</a>
+            <table>
+                <thead>
+                    <tr>
+                        <th> Project </th>
+                        <th colspan="2">Technology</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr> 
+                        <td>AWS for hosting</td>
+                        <td>MERN</td>
+                        <td>Redis</td>
+                    </tr>
+                </tbody>
+            </table>
+        
+
+    </div>
+ </section>   
+ <!-- contact me-->
+  <section id="contact">
+    <h3>Contact Me</h3>
+    <form class="contact-form">
+        <fieldset>
+            <legend>Contact Form</legend>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="name" required>
+            </div>
+            </div>
+            <div class="form-group">
+                <label for="name">Email</label>
+                <input type="email" name="email" id="email" placeholder="email" required>
+            </div>
+            <div class="form-group">
+                
+                <select name="type">
+                    <option value="fte">FTE</option>
+                    <option value="consultant">CONSULTANT</option>
+                </select>
+            </div>
+        </fieldset>
+        <button type="submit" class="submit-btn">Send</button>
+    </form>
+  </section></body>
+</html>
