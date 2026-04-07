@@ -8,7 +8,7 @@ const movies = [
         showtimes:[
             {time: "10:00 AM",seatsAvailable: 100},
             {time: "1:00 PM",seatsAvailable: 70},
-            {time: "6:00 PM",seatsAvailable: 300},
+            {time: "6:00 PM",seatsAvailable: 300}
         ]
     },
 
@@ -34,4 +34,7 @@ const movies = [
     }
 ];
 //Export the movie data so that other files are
-module.export = movies;
+
+module.exports = movies;
+ 
+
