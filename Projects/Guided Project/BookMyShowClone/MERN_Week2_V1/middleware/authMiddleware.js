@@ -1,4 +1,4 @@
-//Middleware to create and/or verify jwt token
+//Middleware to create and/or verify JWT token
 const jwt = require ("jsonwebtoken");
 const CustomError = require("../utils/customError");
 
