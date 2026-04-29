@@ -1,6 +1,7 @@
 // Props destructuring
-
-// import { React } from "react"
+//a syntax of ES6 approach that allows us to unpack properties from 
+//prop object directly into its values  
+import { React } from "react"
 
 function UserProfile({username,skill}){
     return(
